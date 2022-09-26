@@ -93,6 +93,11 @@ nav ul li a:hover {
 section {
   margin: 0 auto;
   padding: 4rem 0;
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .full-width {
@@ -115,8 +120,8 @@ h4 {
   font-size: 1.7rem;
 }
 
-p {
-  line-height: 2.3rem;
+article p {
+  line-height: 2.5rem;
 }
 
 /* Our Mission */
