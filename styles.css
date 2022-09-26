@@ -223,8 +223,8 @@ article p {
 }
 /* Teams */
 #teams {
-  background-color: orange;
-  color: black;
+  background-color: var(--light2);
+  color: var(--dark2);
 }
 
 .team-cards {
@@ -236,7 +236,7 @@ article p {
 
 .team-card {
   width: 23%;
-  background-color: var(--dark1);
+  background-color: var(--dark2);
   color: var(--light1);
   text-align: start;
   border-radius: 10px;
