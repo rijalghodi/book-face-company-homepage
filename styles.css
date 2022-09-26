@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
-:root {
+html {
   --dark1: #000;
   --dark2: #011f26;
   --light1: #ffffff;
@@ -10,6 +10,7 @@
   font-size: 16px;
   font-family: "Source Sans Pro", "Montserrat", "Poppins", sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 * {
