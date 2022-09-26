@@ -321,14 +321,13 @@ p {
   .gallery {
     flex-direction: row;
     width: 100%;
-    gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .book-banner {
     height: auto;
-    width: 34%;
+    width: 45%;
   }
 
   .author,
