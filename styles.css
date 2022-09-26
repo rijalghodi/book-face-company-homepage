@@ -1,12 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 :root {
   --dark1: #000;
   --dark2: #011f26;
   --light1: #ffffff;
   --light2: #ffa836;
-  background-color: var(--light1);
-  color: var(--dark1);
-  font-size: 25px;
-  opacity: 0.9;
+  background-color: var(--dark2);
+  color: var(--light1);
+  font-size: 16px;
   font-family: "Source Sans Pro", "Montserrat", "Poppins", sans-serif;
   box-sizing: border-box;
 }
@@ -14,6 +15,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-size: 1.5rem;
 }
 
 header {
@@ -51,8 +56,7 @@ header div {
 
 #logo-caption {
   font-weight: 800px;
-  font-size: 1.1rem;
-  letter-spacing: 0.1rem;
+  font-size: 2rem;
   font-family: "Open Sans";
 }
 
@@ -66,7 +70,7 @@ nav ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-inline-start: 0px;
+  padding-in-start: 0px;
 }
 
 nav ul li {
@@ -78,9 +82,13 @@ nav ul li a {
   color: var(--dark1);
 }
 
+nav ul li a:hover{
+  text-decoration: underline;
+}
+
 section {
-  margin: 2.7rem auto;
-  padding: 2.7rem 0;
+  margin: 0 auto;
+  padding: 4rem 0 ;
 }
 
 .full-width {
@@ -94,22 +102,23 @@ h4 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: 0px;
   margin: 0.8rem 0;
 }
 
 h4 {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
 }
 
 p {
-  line-height: 1.5rem;
+  line-height: 2.3rem;
 }
 
 /* Our Mission */
 
 #mission {
+  margin-top: 4rem;
   background-color: var(--dark2);
   color: var(--light1);
 }
@@ -118,7 +127,7 @@ p {
   background-color: var(--light2);
   padding: 10px 30px;
   margin-top: 50px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
   border: none;
   border-radius: 4px;
@@ -143,9 +152,15 @@ p {
 #mission div img {
   width: 45%;
   height: auto;
+  border-radius: 10px;
 }
 
 /* Products */
+
+#products {
+  background-color: var(--light1);
+  color: var(--dark2)
+}
 
 #products div {
   display: flex;
@@ -166,9 +181,10 @@ p {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   padding: 20px;
   color: var(--light1);
+  border-radius: 10px;
 }
 
 .book-banner:hover {
@@ -213,27 +229,19 @@ p {
   background-color: var(--dark1);
   color: var(--light1);
   text-align: start;
+  border-radius: 10px;
 }
 
 .team-card img {
   width: 100%;
   height: auto;
+  border-radius: 10px 10px 0 0;
 }
 
 .team-data {
   margin: 20px auto;
   text-align: center;
   padding: 0 10px;
-}
-
-/* Footer */
-
-footer {
-  text-align: center;
-}
-
-footer p {
-  font-size: 0.9rem;
 }
 
 /* Media Query */
@@ -244,11 +252,11 @@ footer p {
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
   }
 
   h4 {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
 
   .full-width {
@@ -264,7 +272,7 @@ footer p {
   }
 
   #products div article {
-    margin-bottom: 1.6rem;
+    margin-bottom: 2.3rem;
   }
 
   .gallery {
@@ -321,7 +329,7 @@ footer p {
   }
 
   #products div article {
-    margin-bottom: 1.6rem;
+    margin-bottom: 2.3rem;
   }
 
   .gallery {
@@ -393,5 +401,123 @@ footer p {
   }
 }
 
-/* @media only screen and (min-width: 1201px) {
-} */
+/* Footer */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  background-color: var(--dark2);
+}
+
+.main-footer {
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer h1 {
+  font-size: 1.4rem;
+  line-height: 117%;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.main-footer h2 {
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.main-footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logoinfo p {
+  color: orange;
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-details li {
+  list-style: none;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.contact-details li a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.contact-details .fa {
+  color: #f1f1f1;
+  margin-right: 10px;
+}
+
+.sociallogos {
+  padding: 20px 0;
+}
+
+.sociallogos .logobox a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.com ul li {
+  padding: 5px 0;
+}
+
+#copyright {
+  border-top: 1px solid #6eb981;
+  font-size: 1rem;
+  padding: 15px 5px;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 749px) {
+  .main-footer {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .info {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-footer {
+    grid-template-columns: 1fr;
+  }
+  .sociallogos {
+    padding: 20px 0;
+  }
+  .com {
+    padding: 20px 0;
+  }
+}
