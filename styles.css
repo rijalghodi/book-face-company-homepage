@@ -82,7 +82,7 @@ nav ul li a {
   color: var(--dark1);
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   text-decoration: underline;
 }
 
@@ -92,7 +92,7 @@ nav ul li a:hover{
 
 section {
   margin: 0 auto;
-  padding: 4rem 0 ;
+  padding: 4rem 0;
 }
 
 .full-width {
@@ -162,7 +162,7 @@ p {
 
 #products {
   background-color: var(--light1);
-  color: var(--dark2)
+  color: var(--dark2);
 }
 
 #products div {
@@ -251,10 +251,30 @@ p {
 /* Media Query */
 
 @media only screen and (max-width: 1200px) {
-  .full-width{
+  .full-width {
     width: 1010px;
   }
+  
+  #products div {
+    flex-wrap: wrap;
   }
+
+  #products div article {
+    margin-bottom: 2.3rem;
+  }
+
+  .gallery {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .book-banner {
+    height: auto;
+    width: 23%;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   :root {
@@ -270,15 +290,7 @@ p {
   }
 
   .book-banner {
-    height: auto;
-  }
-
-  .author {
-    display: none;
-  }
-
-  .title {
-    margin-bottom: 6px;
+    width: 35%;
   }
 
   .team-cards {
@@ -301,42 +313,17 @@ p {
   .full-width {
     width: 470px;
   }
-  
+
   header div nav {
     display: none;
   }
-  
+
   #menu-icon {
     display: block;
   }
   
-  #products div {
-    flex-wrap: wrap;
-  }
-
-  #products div article {
-    margin-bottom: 2.3rem;
-  }
-
-  .gallery {
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .book-banner {
-    height: auto;
+    .book-banner {
     width: 45%;
-  }
-
-  .author,
-  .rating {
-    display: none;
-  }
-
-  .title {
-    margin-bottom: 6px;
   }
 
   .team-cards {
@@ -381,7 +368,6 @@ p {
   .gallery {
     flex-direction: column;
     width: 100%;
-    gap: 10px;
   }
 
   .book-banner {
@@ -412,8 +398,6 @@ p {
     display: none;
   }
 }
-
-
 
 /* Footer */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
@@ -515,9 +499,10 @@ footer a {
 
 @media only screen and (max-width: 768px) {
   .main-footer {
+    text-align: left;
     padding: 20px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
   }
   .info {
     padding: 20px 0;
@@ -526,6 +511,7 @@ footer a {
 
 @media (max-width: 480px) {
   .main-footer {
+    text-align: center;
     grid-template-columns: 1fr;
   }
   .sociallogos {
