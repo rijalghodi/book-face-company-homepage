@@ -86,6 +86,10 @@ nav ul li a:hover{
   text-decoration: underline;
 }
 
+#menu-icon {
+  display: none;
+}
+
 section {
   margin: 0 auto;
   padding: 4rem 0 ;
@@ -136,7 +140,6 @@ p {
 .trial-button:hover {
   transform: translate(4px, -4px);
   box-shadow: -7px 7px white;
-  /* background-color: #ffc82a; */
 }
 
 .trial-button:active {
@@ -168,7 +171,7 @@ p {
 }
 
 .gallery {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-content: center;
@@ -177,7 +180,7 @@ p {
 }
 
 .book-banner {
-  width: 200px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -215,6 +218,7 @@ p {
 /* Teams */
 #teams {
   background-color: orange;
+  color: black;
 }
 
 .team-cards {
@@ -245,10 +249,111 @@ p {
 }
 
 /* Media Query */
+
+@media only screen and (max-width: 1200px) {
+  .full-width{
+    width: 1010px;
+  }
+  }
+
+@media only screen and (max-width: 1024px) {
+  :root {
+    font-size: 15px;
+  }
+
+  .full-width {
+    width: 760px;
+  }
+
+  #mission div img {
+    display: none;
+  }
+
+  .book-banner {
+    height: auto;
+  }
+
+  .author {
+    display: none;
+  }
+
+  .title {
+    margin-bottom: 6px;
+  }
+
+  .team-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .team-card {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .full-width {
+    width: 470px;
+  }
+  
+  header div nav {
+    display: none;
+  }
+  
+  #menu-icon {
+    display: block;
+  }
+  
+  #products div {
+    flex-wrap: wrap;
+  }
+
+  #products div article {
+    margin-bottom: 2.3rem;
+  }
+
+  .gallery {
+    flex-direction: row;
+    width: 100%;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .book-banner {
+    height: auto;
+    width: 34%;
+  }
+
+  .author,
+  .rating {
+    display: none;
+  }
+
+  .title {
+    margin-bottom: 6px;
+  }
+
+  .team-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .team-card {
+    width: 40%;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   :root {
-    font-size: 16px;
-    text-align: center;
+    font-size: 12px;
   }
 
   h2 {
@@ -262,8 +367,7 @@ p {
   .full-width {
     width: 366px;
   }
-  header div nav,
-  #mission div img {
+  header div nav {
     display: none;
   }
 
@@ -310,96 +414,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 481px) {
-  :root {
-    font-size: 18px;
-  }
 
-  .full-width {
-    width: 470px;
-  }
-
-  header div nav,
-  #mission div img {
-    display: none;
-  }
-
-  #products div {
-    flex-wrap: wrap;
-  }
-
-  #products div article {
-    margin-bottom: 2.3rem;
-  }
-
-  .gallery {
-    flex-direction: row;
-    width: 100%;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: start;
-  }
-
-  .book-banner {
-    height: auto;
-    width: 34%;
-  }
-
-  .author,
-  .rating {
-    display: none;
-  }
-
-  .title {
-    margin-bottom: 6px;
-  }
-
-  .team-cards {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .team-card {
-    width: 40%;
-  }
-}
-
-@media only screen and (max-width: 1200px) and (min-width: 769px) {
-  :root {
-    font-size: 23px;
-  }
-
-  .full-width {
-    width: 768px;
-  }
-
-  #mission div img {
-    display: none;
-  }
-
-  .book-banner {
-    height: auto;
-  }
-
-  .author {
-    display: none;
-  }
-
-  .title {
-    margin-bottom: 6px;
-  }
-
-  .team-cards {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .team-card {
-    width: 30%;
-  }
-}
 
 /* Footer */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
@@ -419,7 +434,7 @@ footer {
 .main-footer {
   padding: 70px 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .main-footer ul {
@@ -499,11 +514,11 @@ footer a {
   text-align: center;
 }
 
-@media only screen and (max-width: 749px) {
+@media only screen and (max-width: 768px) {
   .main-footer {
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
   }
   .info {
     padding: 20px 0;
